@@ -12,10 +12,23 @@ This instruction describes complete installation of Arch Linux using bash-script
 # systemctl start sshd.service
 # ifconfig
 ```
-5. download `arch_iso.sh` script from FTP-server, set permissions to run script and run it:
+5. connect to live system by ssh (e.g., using PuTTY);
+6. download `arch_iso.sh` script from FTP-server, set permissions and run it:
 ```
 # wget ftp://<ftp_server>/arch_iso.sh -P ~/
 # chmod +x ~/arch_iso.sh
 # ~/arch_iso.sh
 ```
-6.
+7. enter information for further system setup:
+```
+System hostname                         : ARCH_VM
+Password for root                       : ********
+Username for new user                   : username
+Password for new user                   : ********
+IP-address/mask (e.g. 192.168.0.251/24) : 192.168.0.10/24
+Gateway (Enter for default 192.168.0.1) :
+DNS (Enter for default 192.168.0.1)     :
+HDD (Enter for default /dev/sda)        :
+```
+type `Enter` for three last question. Default parameters are set in `arch_iso.sh` script;
+8. installation algorithm:
