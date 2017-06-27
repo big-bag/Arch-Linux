@@ -3,7 +3,7 @@ Arch Linux installation scripts
 
 This instruction describes complete installation of Arch Linux using bash-scripts.
 
-1. upload both `arch_iso.sh` and `arch_chroot.sh` scrips to FTP-server;
+1. upload both `arch_iso.sh` and `arch_chroot.sh` scrips to FTP-server. Also it must be `authorized_keys` file on server to enable key-based auth;
 2. download the [official installation image](https://www.archlinux.org/download/);
 3. boot the live system from image;
 4. set temporary password for root, start ssh service and find IP-address:
