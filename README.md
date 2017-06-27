@@ -36,7 +36,7 @@ HDD (Enter for default /dev/sda)        :
 2. START MACHINE.
 3. CONNECT BY SSH: ssh username@192.168.0.10
 ```
-9. the last step is to enable [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository). Do it under `new user` account:
+9. enable [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository) under `username` account:
 ```
 git clone https://aur.archlinux.org/package-query.git
 cd package-query
