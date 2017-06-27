@@ -19,7 +19,7 @@ This instruction describes complete installation of Arch Linux using bash-script
 # chmod +x ~/arch_iso.sh
 # ~/arch_iso.sh
 ```
-7. enter information for further system setup:
+7. enter information for further system setup. Type `Enter` for three last question. Default parameters are set in `arch_iso.sh` script:
 ```
 System hostname                         : ARCH_VM
 Password for root                       : ********
@@ -30,4 +30,24 @@ Gateway (Enter for default 192.168.0.1) :
 DNS (Enter for default 192.168.0.1)     :
 HDD (Enter for default /dev/sda)        :
 ```
-type `Enter` for three last question. Default parameters are set in `arch_iso.sh` script;
+8. after the installation is completed, a message will be displayed:
+```
+1. EJECT INSTALLATION ISO.
+2. START MACHINE.
+3. CONNECT BY SSH: ssh username@192.168.0.10
+```
+9. the last step is to enable [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository). Do it under `new user` account:
+```
+git clone https://aur.archlinux.org/package-query.git
+cd package-query
+yes | makepkg -si
+cd ..
+
+git clone https://aur.archlinux.org/yaourt.git
+cd yaourt
+yes | makepkg -si
+cd ..
+
+rm -rf package-query/
+rm -rf yaourt/
+```
