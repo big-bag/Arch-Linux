@@ -31,4 +31,3 @@ DNS (Enter for default 192.168.0.1)     :
 HDD (Enter for default /dev/sda)        :
 ```
 type `Enter` for three last question. Default parameters are set in `arch_iso.sh` script;
-8. installation algorithm:
